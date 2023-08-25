@@ -1,0 +1,22 @@
+[build]
+  # This is the command to build your site.
+  # The `generate` command is used for static site generation in Nuxt.
+  command = "nuxt generate"
+  # The `dist` directory is where Nuxt outputs the built static files.
+  publish = "dist"
+
+# You might not need specific redirects if you're using Nuxt's static site generation
+# because Nuxt will produce individual HTML files for each route.
+# However, if you ever needed to add redirects, you can do so here.
+
+# Optionally, you can set custom headers. The ones you provided are good, but
+# Netlify typically handles content-types well by default.
+[[headers]]
+  for = "/*.js"
+    [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/*.html"
+    [headers.values]
+    Content-Type = "text/html"

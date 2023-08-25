@@ -1,5 +1,10 @@
 <template>
   <div>
-    <p>hello my friend</p>
+    <header class="header">
+      <div>logo</div>
+      <nav>
+        navigation
+      </nav>
+    </header>
   </div>
 </template>

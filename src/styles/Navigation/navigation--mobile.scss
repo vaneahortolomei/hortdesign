@@ -1,0 +1,19 @@
+.navigation.navigation--mobile {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: 0.3s;
+    transform: translate(0, 0);
+
+    .navigation__list {
+        padding: 20px;
+    }
+
+    .nav-list__item + .nav-list__item {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+.nav-item {
+    &__link {
+        color: var(--first-color);
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+        &:active {
+            color: var(--orange-color);
+        }
+        @media(min-width: 1024px) {
+            &:hover {
+                color: var(--orange-color);
+            }
+        }
+    }
+}

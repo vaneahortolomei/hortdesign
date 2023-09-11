@@ -1,10 +1,29 @@
 <template>
-  <div>
-    <header class="header">
-      <div>logo</div>
-      <nav>
-        navigation
-      </nav>
-    </header>
-  </div>
+    <div class="wrapper">
+        <Header/>
+        <div class="content">
+            <div class="main">
+                <HeaderSection>
+                    <div class="container">
+                        <IntroSection/>
+                    </div>
+                </HeaderSection>
+                <MainSection>
+                    main-section
+                </MainSection>
+            </div>
+        </div>
+        <Footer/>
+    </div>
 </template>
+<script>
+    import Header from "./src/Components/Header.vue";
+    import Footer from "./src/Components/Footer.vue";
+    import HeaderSection from "./src/Components/Sections/HeaderSection.vue";
+    import IntroSection from "./src/Components/Sections/Main/IntroSection.vue";
+    import MainSection from "./src/Components/Sections/MainSection.vue";
+
+    export default {
+        components: {MainSection, IntroSection, HeaderSection, Footer, Header}
+    }
+</script>

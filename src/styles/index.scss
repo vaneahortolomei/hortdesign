@@ -1,1 +1,45 @@
+@import "variables";
+@import "HeaderSection/index";
+@import "IntroInfo/index";
 @import "Header/index";
+@import "container/index";
+@import "Navigation/index";
+@import "Decorations/index";
+
+body {
+    background-color: var(--white-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    min-height: 100vh;
+    word-break: break-word;
+}
+
+.wrapper,
+.wrapper > .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > .content {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.o-color {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--orange-color);
+}

@@ -1,0 +1,27 @@
+.header-section {
+    padding-top: var(--header-height);
+    min-height: 640px;
+    background: var(--fourth-color) url('/src/assets/img/Alex.png');
+    position: relative;
+    background-size: contain;
+    background-position: 60% bottom;
+    background-repeat: no-repeat;
+    @media(min-width: 575px) {
+        background-size: 650px;
+        min-height: 780px;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 26px;
+        height: 38px;
+        background: var(--orange-color);
+        @media(min-width: 768px) {
+            width: 86px;
+            height: 68px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.navigation {
+   &__list {
+       margin: 0;
+       list-style-type: none;
+       @media(min-width: 768px){
+           display: flex;
+           padding: 0;
+           margin: 0;
+       }
+   }
+   &__btn {
+       position: absolute;
+       right: 20px;
+       top: 10px;
+       border: none;
+       background: none;
+       font-size: 25px;
+       cursor: pointer;
+       @media(min-width: 768px){
+           display: none;
+       }
+   }
+}

@@ -1,0 +1,7 @@
+.nav-list {
+    @media(min-width: 768px) {
+        &__item + .nav-list__item {
+            margin-left: 45px;
+        }
+    }
+}

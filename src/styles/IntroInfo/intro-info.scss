@@ -1,0 +1,33 @@
+.intro-info {
+    display: inline-flex;
+    flex-direction: column;
+    @media(min-width: 575px) {
+        max-width: 500px;
+    }
+    @media(min-width: 768px) {
+        max-width: var(--info-width);
+        padding-right: 110px;
+    }
+    &__title {
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 50px;
+        line-height: 1.1;
+        @media(min-width: 575px) {
+            font-size: 70px;
+        }
+        @media(min-width: 768px) {
+            font-size: 100px;
+            margin-top: 100px;
+        }
+    }
+
+    &__decoration {
+        margin-top: 30px;
+        align-self: flex-start;
+        margin-right: 10px;
+        @media(min-width: 768px) {
+            align-self: flex-end;
+        }
+    }
+}

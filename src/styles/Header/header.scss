@@ -10,4 +10,64 @@
         align-items: center;
         height: var(--header-height);
     }
+    &__btn {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        width: 70px;
+        height: 49px;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+    }
+
+    &__burger {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        width: 30px;
+        height: 2px;
+        background: var(--black-color);
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 0;
+        transition: background 0.2s;
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background:  var(--black-color);
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        &:before {
+            top: -8px;
+        }
+
+        &:after {
+            top: 8px;
+        }
+    }
+
+    //&__toggler--active {
+    //    .main-menu__burger {
+    //        background: none;
+    //    }
+    //
+    //    .main-menu__burger {
+    //        &:before {
+    //            transform: translateY(8px) rotate(45deg);
+    //        }
+    //    }
+    //
+    //    .main-menu__burger {
+    //        &:after {
+    //            transform: translateY(-8px) rotate(-45deg);
+    //        }
+    //    }
+    //}
 }

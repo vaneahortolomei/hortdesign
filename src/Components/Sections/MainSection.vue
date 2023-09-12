@@ -1,7 +1,7 @@
 <template>
-    <div class="main-section">
+    <section class="main-section">
         <slot/>
-    </div>
+    </section>
 </template>
 
 <script>

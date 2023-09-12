@@ -8,9 +8,7 @@
                         <IntroSection/>
                     </div>
                 </HeaderSection>
-                <MainSection>
-                    main-section
-                </MainSection>
+                <AboutSection/>
             </div>
         </div>
         <Footer/>
@@ -22,8 +20,9 @@
     import HeaderSection from "./src/Components/Sections/HeaderSection.vue";
     import IntroSection from "./src/Components/Sections/Main/IntroSection.vue";
     import MainSection from "./src/Components/Sections/MainSection.vue";
+    import AboutSection from "./src/Components/Sections/Main/AboutSection.vue";
 
     export default {
-        components: {MainSection, IntroSection, HeaderSection, Footer, Header}
+        components: {AboutSection, MainSection, IntroSection, HeaderSection, Footer, Header}
     }
 </script>

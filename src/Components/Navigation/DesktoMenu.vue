@@ -2,16 +2,16 @@
     <nav class="navigation">
         <ul class="navigation__list nav-list">
             <li class="nav-list__item nav-item">
-                <a href="#" title="AboutMe" class="nav-item__link">AboutMe</a>
+                <a href="about" title="AboutMe" class="nav-item__link">AboutMe</a>
             </li>
             <li class="nav-list__item nav-item">
-                <a href="#" title="Works" class="nav-item__link">Works</a>
+                <a href="works" title="Works" class="nav-item__link">Works</a>
             </li>
             <li class="nav-list__item nav-item">
-                <a href="#" title="Road" class="nav-item__link">Road</a>
+                <a href="road" title="Road" class="nav-item__link">Road</a>
             </li>
             <li class="nav-list__item nav-item">
-                <a href="#" title="Contact" class="nav-item__link">Contact</a>
+                <a href="contact" title="Contact" class="nav-item__link">Contact</a>
             </li>
         </ul>
     </nav>

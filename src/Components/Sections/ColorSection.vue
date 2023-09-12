@@ -1,11 +1,11 @@
 <template>
-    <section class="header-section">
+    <section class="color-section">
         <slot/>
     </section>
 </template>
 
 <script>
     export default {
-        name: "HeaderSection"
+        name: "ColorSection"
     }
 </script>

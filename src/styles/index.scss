@@ -1,10 +1,14 @@
 @import "variables";
 @import "HeaderSection/index";
+@import "MainSection/index";
+@import "ColorSection/index";
 @import "IntroInfo/index";
 @import "Header/index";
 @import "container/index";
 @import "Navigation/index";
 @import "Decorations/index";
+@import "Others/index";
+@import "About/index";
 
 body {
     background-color: var(--white-color);
@@ -42,4 +46,20 @@ img {
     display: inline-block;
     font-weight: 700;
     color: var(--orange-color);
+}
+
+.title {
+    color: var(--orange-color);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.description {
+    color: var(--first-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
 }

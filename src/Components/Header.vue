@@ -3,7 +3,14 @@
             <div class="container">
                 <div class="header__header">
                     <Logo class="header__log"/>
-                    <button v-if="isMobile" @click="toggleMenu">Toggle Menu</button>
+                    <button v-if="isMobile" @click="toggleMenu"
+                            class="header__btn"
+                            type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false">
+                        <span class="header__burger"/>
+                    </button>
                     <component
                         class="header__navigation"
                         :is="currentMenuComponent"

@@ -1,0 +1,33 @@
+.road-years {
+    &__item + .road-years__item {
+        margin-top: 60px;
+    }
+
+    &__item {
+        line-height: 1.2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__year {
+        font-size: 50px;
+        font-weight: 600;
+        color: var(--orange-color);
+    }
+
+    &__interval {
+        color: var(--gray-color);
+        font-weight: 500;
+    }
+    &__title {
+        font-size: 25px;
+        color: var(--orange-color);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 7px;
+    }
+    &__desc {
+        max-width: 350px;
+    }
+}

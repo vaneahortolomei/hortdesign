@@ -1,9 +1,11 @@
 @import "variables";
 @import "HeaderSection/index";
+@import "Footer/index";
 @import "MainSection/index";
 @import "ColorSection/index";
 @import "IntroInfo/index";
 @import "Header/index";
+@import "Works/index";
 @import "container/index";
 @import "Navigation/index";
 @import "Decorations/index";
@@ -12,7 +14,7 @@
 @import "About/index";
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--background-color);
 }
 
 *,

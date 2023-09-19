@@ -10,6 +10,7 @@
                 </HeaderSection>
                 <AboutSection/>
                 <RoadSection/>
+                <WorksSection/>
             </div>
         </div>
         <Footer/>
@@ -23,8 +24,9 @@
     import MainSection from "./src/Components/Sections/MainSection.vue";
     import AboutSection from "./src/Components/Sections/Main/AboutSection.vue";
     import RoadSection from "./src/Components/Sections/Main/RoadSection.vue";
+    import WorksSection from "./src/Components/Sections/Main/WorksSection.vue";
 
     export default {
-        components: {RoadSection, AboutSection, MainSection, IntroSection, HeaderSection, Footer, Header}
+        components: {WorksSection, RoadSection, AboutSection, MainSection, IntroSection, HeaderSection, Footer, Header}
     }
 </script>

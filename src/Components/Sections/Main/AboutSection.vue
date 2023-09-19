@@ -32,7 +32,7 @@
         <div class="about about--color-bg">
             <div class="container">
                 <div class="about__img-wrapper">
-                    <p class="about__big-title big-title">About Me</p>
+                    <h2 class="about__big-title big-title">About Me</h2>
                     <img src="../../../assets/img/profile.png" alt="profile" class="about__img"/>
                 </div>
                 <h2 class="title about__title">The beginging is always hard.</h2>

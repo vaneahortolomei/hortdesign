@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--white-color);
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    &__about {
+        margin-left: 20px;
+        color: var(--gray-color);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @supports (gap: 20px) {
+            gap: 20px;
+        }
+    }
+
+    &__mail, &__link {
+        color: var(--gray-color);
+    }
+    &__address {
+        max-width: 200px;
+    }
+
+    &__year {
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--background-color);
+    }
+}
+

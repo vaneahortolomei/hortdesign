@@ -1,31 +1,48 @@
 .footer {
     background-color: var(--white-color);
     padding: 40px 20px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        padding: 40px 20px;
+    }
 
     &__about {
-        margin-left: 20px;
+        margin-top: 20px;
         color: var(--gray-color);
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
         @supports (gap: 20px) {
             gap: 20px;
+        }
+        @media(min-width: 1024px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 20px;
+            margin-top: 0;
         }
     }
 
     &__mail, &__link {
         color: var(--gray-color);
+        display: block;
     }
+
     &__address {
-        max-width: 200px;
+        max-width: initial;
+        font-size: 14px;
+        @media(min-width: 1024px) {
+            max-width: 230px;
+            font-size: 16px;
+        }
     }
 
     &__year {
-        font-size: 40px;
+        font-size: 14px;
         font-weight: 700;
         color: var(--background-color);
+        @media(min-width: 1024px) {
+            font-size: 40px;
+        }
     }
 }
 

@@ -1,32 +1,65 @@
 .road-years {
     &__item + .road-years__item {
-        margin-top: 60px;
+        margin-top: 30px;
+        @media(min-width: 1024px) {
+            margin-top: 60px;
+        }
     }
 
     &__item {
         line-height: 1.2;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        @media(min-width: 1024px) {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
     }
 
     &__year {
-        font-size: 50px;
+        font-size: 16px;
         font-weight: 600;
         color: var(--orange-color);
+        @media(min-width: 1023px) {
+            font-size: 30px;
+        }
+        @media(min-width: 1150px){
+            font-size: 50px;
+        }
+    }
+
+    &__options {
+        @media(max-width: 1023px) {
+            order: 1;
+            margin-top: 15px;
+        }
     }
 
     &__interval {
         color: var(--gray-color);
         font-weight: 500;
+        font-size: 12px;
+        @media(min-width: 1023px) {
+            font-size: 14px;
+        }
+        @media(min-width: 1150px){
+            font-size: 16px;
+        }
     }
+
     &__title {
-        font-size: 25px;
+        font-size: 20px;
         color: var(--orange-color);
         font-weight: 500;
         display: block;
         margin-bottom: 7px;
+        @media(min-width: 1150px) {
+            font-size: 25px;
+        }
     }
+
     &__desc {
         max-width: 350px;
     }

@@ -1,5 +1,8 @@
 .works {
-    margin-bottom: 250px;
+    @media(min-width: 1024px) {
+        margin-bottom: 250px;
+    }
+
     &__img {
         position: absolute;
         left: 0;

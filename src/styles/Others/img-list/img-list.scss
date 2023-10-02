@@ -2,8 +2,39 @@
     &__img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
-    &__img + .img-list__img {
-        margin-top: 20px;
+
+    &__title {
+        display: none;
+        @media(min-width: 1024px) {
+            position: absolute;
+            top: 76px;
+            left: -168px;
+            transform: rotate(270deg);
+            display: block;
+        }
+    }
+
+    &__img-wrap + .img-list__img-wrap {
+        @media (min-width: 1024px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__img-wrap {
+        @media (min-width: 1024px) {
+            &--small {
+                height: 200px;
+            }
+            &--big {
+                height: 400px;
+            }
+        }
+        @media(max-width: 1024px) {
+            flex: 1 1 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
     }
 }

@@ -30,9 +30,11 @@
 
     .about__title {
         padding-bottom: 10px;
+        padding-left: 50px;
         @media(min-width: 1024px) {
             margin-top: -40px;
             width: 250px;
+            padding-left: 0;
         }
     }
 
@@ -47,5 +49,10 @@
 
     .description {
         color: var(--white-color);
+        padding-left: 50px;
+        @media(min-width: 1024px) {
+            padding-left: 0;
+        }
+
     }
 }
